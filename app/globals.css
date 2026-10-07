@@ -1,49 +1,274 @@
+/* Paleta tirada da logo: ela e so preto e branco.
+   Branco sobre preto da 21:1 de contraste; a WCAG AA pede 4,5:1. */
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --preto: #000000;
+  --branco: #ffffff;
+  --grafite: #121212;
+  --fumaca: #a8a8a8;
+  --chumbo: #4f4f4f;
+  --linha-clara: rgba(255, 255, 255, 0.16);
+  --linha-escura: rgba(0, 0, 0, 0.14);
+  --largura: min(1160px, calc(100% - 40px));
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
+* { box-sizing: border-box; }
 
 html {
-  height: 100%;
-}
-
-html,
-body {
-  max-width: 100vw;
-  overflow-x: hidden;
+  scroll-behavior: smooth;
+  -webkit-tap-highlight-color: transparent;
 }
 
 body {
-  min-height: 100%;
-  display: flex;
-  flex-direction: column;
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-* {
-  box-sizing: border-box;
-  padding: 0;
   margin: 0;
+  background: var(--preto);
+  color: var(--branco);
+  font-family: var(--fonte-corpo), system-ui, sans-serif;
+  font-size: 17px;
+  line-height: 1.65;
+  -webkit-font-smoothing: antialiased;
 }
 
-a {
-  color: inherit;
+a { color: inherit; }
+img { max-width: 100%; height: auto; }
+
+:focus-visible {
+  outline: 3px solid currentColor;
+  outline-offset: 4px;
+  border-radius: 2px;
+}
+
+h1, h2, h3 {
+  font-family: var(--fonte-display), Impact, sans-serif;
+  font-weight: 400;
+  letter-spacing: 0.01em;
+  line-height: 0.92;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+h1 { font-size: clamp(52px, 10vw, 112px); }
+h2 { font-size: clamp(38px, 6vw, 68px); }
+h3 { font-size: clamp(22px, 2.6vw, 28px); line-height: 1.1; }
+
+p { margin: 0; max-width: 62ch; }
+
+.faixa { padding: clamp(72px, 10vw, 128px) 0; }
+
+.faixa-clara {
+  background: var(--branco);
+  color: var(--preto);
+}
+
+.interno {
+  width: var(--largura);
+  margin: 0 auto;
+}
+
+.apoio {
+  margin-top: 20px;
+  color: var(--fumaca);
+  font-size: 18px;
+}
+
+.faixa-clara .apoio { color: var(--chumbo); }
+
+.cabecalho {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  background: var(--preto);
+  border-bottom: 1px solid var(--linha-clara);
+}
+
+.cabecalho-interno {
+  width: var(--largura);
+  margin: 0 auto;
+  min-height: 72px;
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.marca img { display: block; width: 224px; height: auto; }
+
+.menu {
+  display: flex;
+  gap: 26px;
+  margin-left: auto;
+  font-size: 15px;
+}
+
+.menu a {
   text-decoration: none;
+  padding-bottom: 2px;
+  border-bottom: 2px solid transparent;
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
+.menu a:hover { border-bottom-color: var(--branco); }
+
+.botao,
+.botao-vazado {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 52px;
+  padding: 0 26px;
+  font-family: var(--fonte-display), Impact, sans-serif;
+  font-size: 19px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  text-decoration: none;
+  border-radius: 2px;
+  transition: background-color 0.15s ease, color 0.15s ease;
+}
+
+.botao {
+  background: var(--branco);
+  color: var(--preto);
+  border: 2px solid var(--branco);
+}
+
+.faixa-clara .botao {
+  background: var(--preto);
+  color: var(--branco);
+  border-color: var(--preto);
+}
+
+.botao-vazado {
+  background: transparent;
+  color: var(--branco);
+  border: 2px solid var(--branco);
+}
+
+.faixa-clara .botao-vazado {
+  color: var(--preto);
+  border-color: var(--preto);
+}
+
+.botao-vazado:hover { background: var(--branco); color: var(--preto); }
+.faixa-clara .botao-vazado:hover { background: var(--preto); color: var(--branco); }
+
+.acoes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  margin-top: 38px;
+}
+
+.topo { padding: clamp(80px, 14vw, 150px) 0 0; }
+.topo h1 { max-width: 14ch; }
+
+.topo p {
+  margin-top: 26px;
+  font-size: clamp(19px, 2.2vw, 23px);
+  color: var(--fumaca);
+}
+
+/* O arco repete a curva embaixo do veiculo na logo: uma estrada
+   cruzando o horizonte. E o elemento que costura a pagina. */
+.arco {
+  display: block;
+  width: 100%;
+  height: clamp(48px, 7vw, 96px);
+  margin-top: clamp(56px, 8vw, 96px);
+}
+
+.dupla {
+  display: grid;
+  gap: clamp(28px, 4vw, 56px);
+  margin-top: 44px;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+}
+
+.item h3 { margin-bottom: 10px; }
+.item p { color: var(--fumaca); }
+.faixa-clara .item p { color: var(--chumbo); }
+
+.icone { width: 56px; height: 56px; margin-bottom: 18px; }
+
+/* Numeros aqui porque o conteudo e mesmo uma sequencia. */
+.passos {
+  counter-reset: passo;
+  list-style: none;
+  padding: 0;
+  display: grid;
+  gap: 2px;
+  margin-top: 44px;
+  background: var(--linha-escura);
+  border-top: 1px solid var(--linha-escura);
+  border-bottom: 1px solid var(--linha-escura);
+}
+
+.passo {
+  counter-increment: passo;
+  background: var(--branco);
+  padding: 26px 0;
+  display: grid;
+  grid-template-columns: 72px 1fr;
+  gap: 20px;
+  align-items: start;
+}
+
+.passo::before {
+  content: counter(passo, decimal-leading-zero);
+  font-family: var(--fonte-display), Impact, sans-serif;
+  font-size: 34px;
+  line-height: 1;
+  color: var(--preto);
+}
+
+.contato-grade {
+  display: grid;
+  gap: clamp(28px, 5vw, 64px);
+  margin-top: 44px;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+}
+
+.rotulo {
+  font-family: var(--fonte-display), Impact, sans-serif;
+  font-size: 20px;
+  text-transform: uppercase;
+  margin-bottom: 6px;
+}
+
+.dado {
+  color: var(--fumaca);
+  text-decoration: none;
+  border-bottom: 1px solid var(--linha-clara);
+}
+
+.dado:hover { color: var(--branco); border-bottom-color: var(--branco); }
+
+.rodape {
+  border-top: 1px solid var(--linha-clara);
+  padding: 34px 0;
+  color: var(--fumaca);
+  font-size: 14px;
+}
+
+.rodape-interno {
+  width: var(--largura);
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  justify-content: space-between;
+}
+
+@media (max-width: 760px) {
+  .menu { display: none; }
+  .cabecalho-interno { justify-content: space-between; }
+  .acoes .botao, .acoes .botao-vazado { width: 100%; }
+  .passo { grid-template-columns: 54px 1fr; gap: 14px; }
+}
+
+/* Quem liga "reduzir movimento" no sistema sente mal-estar com animacao.
+   Desacelerar nao resolve: rolagem instantanea e transicoes desligadas. */
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
   }
 }

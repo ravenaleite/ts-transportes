@@ -25,7 +25,7 @@ const etapas = [
 
 export default function ComoFunciona() {
   return (
-    <section className="faixa faixa-clara" id="como-funciona">
+    <section className="faixa faixa-separada" id="como-funciona">
       <div className="interno">
         <h2>Como funciona</h2>
         <ol className="passos">

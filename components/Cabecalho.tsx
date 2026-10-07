@@ -16,8 +16,8 @@ export default function Cabecalho() {
         </Link>
 
         <nav className="menu" aria-label="Navegação principal">
-          <Link href="#bandas">Bandas</Link>
-          <Link href="#encomendas">Encomendas</Link>
+          <Link href="#bandas">Banda e artista</Link>
+          <Link href="#encomendas">Coleta e envio</Link>
           <Link href="#como-funciona">Como funciona</Link>
           <Link href="#contato">Contato</Link>
         </nav>

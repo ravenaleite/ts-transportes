@@ -16,22 +16,22 @@ export default function Topo() {
           <a
             className="botao"
             href={`${WHATSAPP}?text=${encodeURIComponent(
-              "Olá! Quero um orçamento para transporte da minha banda."
+              "Olá! Quero um orçamento para transporte de banda e artista."
             )}`}
             target="_blank"
             rel="noreferrer"
           >
-            Fretar para minha banda
+            Banda e artista
           </a>
           <a
             className="botao-vazado"
             href={`${WHATSAPP}?text=${encodeURIComponent(
-              "Olá! Quero enviar uma encomenda."
+              "Olá! Quero fazer uma coleta ou um envio."
             )}`}
             target="_blank"
             rel="noreferrer"
           >
-            Enviar encomenda
+            Coleta e envio
           </a>
         </div>
       </div>

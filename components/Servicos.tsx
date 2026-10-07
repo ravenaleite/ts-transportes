@@ -6,11 +6,11 @@ export default function Servicos() {
       {/* Preto: a estrada de madrugada, o show. */}
       <section className="faixa" id="bandas">
         <div className="interno">
-          <h2>Transporte para bandas</h2>
+          <h2>Banda e artista</h2>
           <p className="apoio">
-            Levamos a banda, a equipe e os equipamentos até o palco, em qualquer
-            cidade do Brasil. Motorista experiente em estrada longa e agenda
-            combinada com a produção.
+            Levamos o artista, a banda, a equipe e os equipamentos até o palco,
+            em qualquer cidade do Brasil. Motorista experiente em estrada longa
+            e agenda combinada com a produção.
           </p>
 
           <div className="dupla">
@@ -22,10 +22,10 @@ export default function Servicos() {
               </p>
             </div>
             <div className="item">
-              <h3>Banda e equipe juntas</h3>
+              <h3>Artista em carro próprio</h3>
               <p>
-                Músicos, técnicos e equipamento no mesmo transporte, sem precisar
-                dividir em dois veículos.
+                O artista viaja na Pajero, com privacidade e descanso. A banda, a
+                equipe e os equipamentos seguem na van.
               </p>
             </div>
             <div className="item">
@@ -52,9 +52,9 @@ export default function Servicos() {
 
       {/* Branco: a operação de dia. Mesmas duas cores da marca,
           usadas para separar os dois serviços. */}
-      <section className="faixa faixa-clara" id="encomendas">
+      <section className="faixa faixa-separada" id="encomendas">
         <div className="interno">
-          <h2>Encomendas</h2>
+          <h2>Coleta e envio</h2>
           <p className="apoio">
             Ponto de coleta e entrega em Salgueiro, atendendo um raio de 250 km.
             Recebemos a carga, separamos por rota e entregamos no endereço.
@@ -91,7 +91,7 @@ export default function Servicos() {
               target="_blank"
               rel="noreferrer"
             >
-              Falar sobre entregas
+              Falar sobre coleta
             </a>
           </div>
         </div>

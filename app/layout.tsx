@@ -35,8 +35,14 @@ export const metadata: Metadata = {
     title: "TS Transportes | Salgueiro-PE",
     description:
       "Transporte para bandas e equipes de show e entrega de encomendas em Salgueiro-PE e região.",
-    // TODO: criar public/og-image.png (1200x630) e descomentar.
-    // images: [{ url: "/og-image.png", width: 1200, height: 630, alt: "TS Transportes" }],
+    images: [
+      {
+        url: "/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: "TS Transportes — transporte para bandas e artistas, coleta e envio em Salgueiro",
+      },
+    ],
   },
 };
 

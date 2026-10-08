@@ -10,9 +10,9 @@ export default function Frota() {
       <div className="interno">
         <h2>A frota</h2>
         <p className="apoio">
-          Frota própria e identificada. Carro executivo para o artista, van
-          para a banda e os equipamentos, picape e utilitário para as
-          encomendas.
+          Seis veículos próprios e identificados. Carro executivo para o
+          artista, van para a banda e os equipamentos, picape e utilitário
+          para as encomendas.
         </p>
 
         <img

@@ -84,13 +84,13 @@ p { margin: 0; max-width: 62ch; }
 .cabecalho-interno {
   width: var(--largura);
   margin: 0 auto;
-  min-height: 72px;
+  min-height: 80px;
   display: flex;
   align-items: center;
   gap: 24px;
 }
 
-.marca img { display: block; width: 254px; height: auto; }
+.marca img { display: block; width: 252px; height: auto; }
 
 .menu {
   display: flex;

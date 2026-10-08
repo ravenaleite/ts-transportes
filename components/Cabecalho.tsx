@@ -8,9 +8,9 @@ export default function Cabecalho() {
         <Link href="/" className="marca" aria-label="TS Transportes, início">
           <Image
             src="/logo-ts-horizontal.svg"
-            alt="TS Transportes"
-            width={254}
-            height={40}
+            alt="TS Transportes — Logística e Translado"
+            width={252}
+            height={62}
             priority
           />
         </Link>

@@ -2,7 +2,7 @@ import Image from "next/image";
 import { WHATSAPP } from "@/lib/dados";
 
 // Tres fatos que resumem o negocio antes da pessoa rolar a pagina.
-const etiquetas = ["Todo o Brasil", "Raio de 250 km", "Atendimento direto"];
+const etiquetas = ["Todo o Brasil", "Raio de 250 km", "6 veículos próprios"];
 
 export default function Topo() {
   return (
@@ -53,7 +53,7 @@ export default function Topo() {
           src="/cena-veiculos.svg"
           alt="Pajero e van da TS Transportes sobre a estrada"
           width={1400}
-          height={620}
+          height={640}
           priority
         />
       </div>

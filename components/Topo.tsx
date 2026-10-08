@@ -1,5 +1,8 @@
-import Arco from "./Arco";
+import Image from "next/image";
 import { WHATSAPP } from "@/lib/dados";
+
+// Tres fatos que resumem o negocio antes da pessoa rolar a pagina.
+const etiquetas = ["Todo o Brasil", "Raio de 250 km", "Atendimento direto"];
 
 export default function Topo() {
   return (
@@ -11,6 +14,12 @@ export default function Topo() {
           de encomendas em Salgueiro e região. Atendimento direto, sem
           intermediário.
         </p>
+
+        <ul className="etiquetas">
+          {etiquetas.map((e) => (
+            <li key={e}>{e}</li>
+          ))}
+        </ul>
 
         <div className="acoes">
           <a
@@ -35,7 +44,19 @@ export default function Topo() {
           </a>
         </div>
       </div>
-      <Arco />
+
+      {/* A cena repete o desenho da marca em tamanho grande: a Pajero
+          atras, a van na frente, as duas apoiadas no arco. O brilho
+          por tras vem do CSS, nao da imagem. */}
+      <div className="cena">
+        <Image
+          src="/cena-veiculos.svg"
+          alt="Pajero e van da TS Transportes sobre a estrada"
+          width={1400}
+          height={620}
+          priority
+        />
+      </div>
     </section>
   );
 }

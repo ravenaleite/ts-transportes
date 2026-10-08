@@ -90,7 +90,7 @@ p { margin: 0; max-width: 62ch; }
   gap: 24px;
 }
 
-.marca img { display: block; width: 224px; height: auto; }
+.marca img { display: block; width: 254px; height: auto; }
 
 .menu {
   display: flex;
@@ -156,6 +156,56 @@ p { margin: 0; max-width: 62ch; }
   margin-top: 26px;
   font-size: clamp(19px, 2.2vw, 23px);
   color: var(--fumaca);
+}
+
+/* Etiquetas: tres fatos do negocio, logo abaixo da chamada. */
+.etiquetas {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 28px 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.etiquetas li {
+  padding: 7px 16px;
+  border: 1px solid var(--linha-clara);
+  border-radius: 999px;
+  font-size: 14px;
+  color: var(--branco);
+}
+
+/* A cena dos veiculos. O brilho atras e uma luz de estudio: da
+   volume ao desenho chapado, sem precisar de foto. */
+.cena {
+  position: relative;
+  margin-top: clamp(40px, 6vw, 72px);
+  padding: 0 16px;
+}
+
+.cena::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 8%;
+  width: min(960px, 86%);
+  height: 78%;
+  transform: translateX(-50%);
+  background: radial-gradient(
+    ellipse at center,
+    rgba(255, 255, 255, 0.14),
+    rgba(255, 255, 255, 0) 68%
+  );
+  pointer-events: none;
+}
+
+.cena img {
+  position: relative;
+  display: block;
+  width: min(1180px, 100%);
+  height: auto;
+  margin: 0 auto;
 }
 
 /* O arco repete a curva embaixo do veiculo na logo: uma estrada

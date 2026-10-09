@@ -51,6 +51,8 @@ página e contamina o resultado.
 | Boas Práticas | 100 | 100 | |
 | SEO | 100 | 100 | |
 
+![Comparativo do Lighthouse antes e depois](./lighthouse-antes-depois.png)
+
 Os relatórios completos estão versionados neste repositório:
 [`lighthouse-antes.html`](./lighthouse-antes.html) e
 [`lighthouse-depois.html`](./lighthouse-depois.html). Baixe e abra no
@@ -173,4 +175,4 @@ public/             logos, fotos e imagem social
 
 Projeto desenvolvido por **Ravena Leite** como entrega da mentoria DevVagas.
 
-[GitHub](https://github.com/ravenaleite)
+[LinkedIn](https://www.linkedin.com/in/ravena-leite-3a5804399/) · [GitHub](https://github.com/ravenaleite)

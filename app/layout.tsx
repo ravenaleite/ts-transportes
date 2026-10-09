@@ -23,7 +23,7 @@ const siteUrl = "https://ts-transportes.vercel.app";
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
-  title: "TS Transportes | Salgueiro-PE",
+  title: "TS Transportes | Transporte de bandas e encomendas em Salgueiro-PE",
   description:
     "Transporte para bandas e equipes de show em todo o Brasil e entrega de encomendas em Salgueiro-PE e região. Orçamento pelo WhatsApp.",
   alternates: { canonical: "/" },

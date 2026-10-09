@@ -1,9 +1,10 @@
+import Image from "next/image";
 import { WHATSAPP } from "@/lib/dados";
 
-// PRIMEIRA VERSAO, de proposito: <img> simples, imagem inteira,
-// sem formato moderno e sem lazy loading. E o jeito mais comum de
-// colocar uma foto, e serve de ponto de partida para o Lighthouse.
-// Depois disso a gente otimiza e mede de novo.
+// SEGUNDA VERSAO. Antes era <img> cru: o navegador baixava o JPG
+// inteiro, no formato antigo, logo no comeco do carregamento.
+// O next/image serve WebP, corta no tamanho que a tela pede e so
+// baixa quando a foto esta perto de aparecer.
 export default function Frota() {
   return (
     <section className="faixa faixa-separada" id="frota">
@@ -15,12 +16,13 @@ export default function Frota() {
           para as encomendas.
         </p>
 
-        <img
+        <Image
           className="foto-frota"
           src="/frota.jpg"
           alt="Quatro veículos da TS Transportes enfileirados no pátio, com a van ao fundo"
           width={1200}
           height={580}
+          sizes="(max-width: 760px) 100vw, 1160px"
         />
 
         <div className="dupla">

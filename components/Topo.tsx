@@ -8,11 +8,14 @@ export default function Topo() {
   return (
     <section className="topo" id="inicio">
       <div className="interno">
-        <h1>Sua carga e sua banda chegam na hora</h1>
+        {/* O h1 e frase de marca, nao lista de servicos. Quem carrega as
+    palavras que as pessoas procuram e o paragrafo logo abaixo e o
+    <title> da pagina. */}
+        <h1>A estrada é nossa. O horário é seu.</h1>
         <p>
-          Transporte para bandas e equipes de show em todo o Brasil, e entrega
-          de encomendas em Salgueiro e região. Atendimento direto, sem
-          intermediário.
+          Transporte de bandas, artistas e equipes de show para todo o Brasil,
+          e coleta e entrega de encomendas em Salgueiro-PE e região.
+          Atendimento direto com quem dirige, sem intermediário.
         </p>
 
         <ul className="etiquetas">

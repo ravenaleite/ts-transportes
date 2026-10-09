@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { WHATSAPP } from "@/lib/dados";
 
 export default function Servicos() {
@@ -8,12 +9,13 @@ export default function Servicos() {
         <div className="interno">
           <h2>Banda e artista</h2>
 
-          <img
+          <Image
             className="foto-secao"
             src="/van-sprinter.jpg"
             alt="Van Mercedes-Benz Sprinter preta da TS Transportes, vista de lado"
             width={720}
             height={520}
+            sizes="(max-width: 760px) 100vw, 720px"
           />
           <p className="apoio">
             Levamos o artista, a banda, a equipe e os equipamentos até o palco,
@@ -64,12 +66,13 @@ export default function Servicos() {
         <div className="interno">
           <h2>Coleta e envio</h2>
 
-          <img
+          <Image
             className="foto-secao"
             src="/van-master.jpg"
             alt="Van Renault Master branca da TS Transportes, vista de frente"
             width={900}
             height={850}
+            sizes="(max-width: 760px) 100vw, 900px"
           />
           <p className="apoio">
             Ponto de coleta e entrega em Salgueiro, atendendo um raio de 250 km.

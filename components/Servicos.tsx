@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { WHATSAPP, CIDADES } from "@/lib/dados";
+import { WHATSAPP, CIDADES, BASE } from "@/lib/dados";
 
 export default function Servicos() {
   return (
@@ -75,16 +75,18 @@ export default function Servicos() {
             sizes="(max-width: 760px) 100vw, 900px"
           />
           <p className="apoio">
-            Ponto de coleta e entrega em Salgueiro, atendendo um raio de 250 km.
-            Recebemos a carga, separamos por rota e entregamos no endereço.
+            Depósito próprio em {BASE}, atendendo um raio de 250 km. A
+            coleta sai das cidades da região, a carga se junta no depósito,
+            e dali sai separada por rota.
           </p>
 
           <div className="dupla">
             <div className="item">
               <h3>Raio de 250 km</h3>
               <p>
-                Atendemos {CIDADES.join(", ")} e as demais cidades do
-                sertão de Pernambuco dentro desse alcance.
+                Coletamos em {CIDADES.join(", ")} e nas demais cidades do
+                sertão dentro desse alcance. A carga vem para o depósito
+                em {BASE}.
               </p>
             </div>
             <div className="item">

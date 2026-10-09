@@ -1,7 +1,7 @@
 import type { Metadata, Viewport } from "next";
 import { Anton, Archivo } from "next/font/google";
 import "./globals.css";
-import { CIDADES } from "@/lib/dados";
+import { CIDADES, BASE } from "@/lib/dados";
 
 // next/font baixa a fonte e serve do nosso proprio dominio.
 // Isso corta uma conexao externa e o display swap evita que o
@@ -29,7 +29,7 @@ export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   title: "TS Transportes | Transporte de bandas e encomendas em Salgueiro-PE",
   description:
-    "Transporte de bandas e artistas para todo o Brasil e coleta de encomendas em Salgueiro, Petrolina, Serra Talhada, Cabrobó, Ouricuri e Araripina-PE.",
+    "Transporte de bandas e artistas para todo o Brasil. Depósito em Salgueiro-PE com coleta em Petrolina, Serra Talhada, Cabrobó, Ouricuri e Araripina.",
   alternates: { canonical: "/" },
   openGraph: {
     type: "website",
@@ -75,6 +75,7 @@ const dadosDoNegocio = {
   areaServed: [
     { "@type": "Country", name: "Brasil" },
     { "@type": "State", name: "Pernambuco" },
+    { "@type": "City", name: BASE },
     ...CIDADES.map((nome) => ({ "@type": "City", name: nome })),
   ],
 };

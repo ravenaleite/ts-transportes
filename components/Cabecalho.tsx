@@ -9,8 +9,8 @@ export default function Cabecalho() {
           <Image
             src="/logo-ts-horizontal.svg"
             alt="TS Transportes — Logística e Translado"
-            width={252}
-            height={62}
+            width={230}
+            height={72}
             priority
           />
         </Link>

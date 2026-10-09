@@ -1,4 +1,4 @@
-import Image from "next/image";
+import Arco from "./Arco";
 import { WHATSAPP } from "@/lib/dados";
 
 // Tres fatos que resumem o negocio antes da pessoa rolar a pagina.
@@ -45,18 +45,9 @@ export default function Topo() {
         </div>
       </div>
 
-      {/* A cena repete o desenho da marca em tamanho grande: a Pajero
-          atras, a van na frente, as duas apoiadas no arco. O brilho
-          por tras vem do CSS, nao da imagem. */}
-      <div className="cena">
-        <Image
-          src="/cena-veiculos.svg"
-          alt="Pajero e van da TS Transportes sobre a estrada"
-          width={1400}
-          height={640}
-          priority
-        />
-      </div>
+      {/* O arco e o elemento da marca: uma estrada cruzando o horizonte.
+          Fecha o topo e separa da proxima secao. */}
+      <Arco />
     </section>
   );
 }

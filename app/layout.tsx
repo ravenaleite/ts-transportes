@@ -18,7 +18,10 @@ const corpo = Archivo({
   variable: "--fonte-corpo",
 });
 
-// TODO: trocar pelo endereco final da Vercel antes do deploy.
+// Endereco de producao, confirmado no deploy de 09/10/2026.
+// Alimenta o canonical, a previa do Open Graph e o JSON-LD do
+// negocio. Se um dia a TS registrar dominio proprio, troca aqui
+// e os tres acompanham.
 const siteUrl = "https://ts-transportes.vercel.app";
 
 export const metadata: Metadata = {

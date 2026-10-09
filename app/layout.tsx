@@ -1,6 +1,7 @@
 import type { Metadata, Viewport } from "next";
 import { Anton, Archivo } from "next/font/google";
 import "./globals.css";
+import { CIDADES } from "@/lib/dados";
 
 // next/font baixa a fonte e serve do nosso proprio dominio.
 // Isso corta uma conexao externa e o display swap evita que o
@@ -28,7 +29,7 @@ export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   title: "TS Transportes | Transporte de bandas e encomendas em Salgueiro-PE",
   description:
-    "Transporte para bandas e equipes de show em todo o Brasil e entrega de encomendas em Salgueiro-PE e região. Orçamento pelo WhatsApp.",
+    "Transporte de bandas e artistas para todo o Brasil e coleta de encomendas em Salgueiro, Petrolina, Serra Talhada, Cabrobó, Ouricuri e Araripina-PE.",
   alternates: { canonical: "/" },
   openGraph: {
     type: "website",
@@ -68,9 +69,13 @@ const dadosDoNegocio = {
     addressRegion: "PE",
     addressCountry: "BR",
   },
+  // Pais e estado cobrem o translado de bandas, que roda o Brasil
+  // inteiro. As cidades cobrem a coleta de encomendas, que tem
+  // alcance definido. O Google usa isso para saber onde mostrar.
   areaServed: [
     { "@type": "Country", name: "Brasil" },
     { "@type": "State", name: "Pernambuco" },
+    ...CIDADES.map((nome) => ({ "@type": "City", name: nome })),
   ],
 };
 

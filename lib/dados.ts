@@ -5,3 +5,15 @@ export const TELEFONE_EXIBIDO = "(87) 99810-0459";
 export const ENDERECO = "Rua 8, nº 66 — Cohab, Salgueiro-PE";
 export const MAPS =
   "https://www.google.com/maps/search/?api=1&query=Rua+8+66+Cohab+Salgueiro+PE";
+
+// Cidades atendidas na coleta e entrega, confirmadas pelo dono.
+// Alimentam o texto da secao, o areaServed do JSON-LD e a
+// description da pagina. Mudou a area de atuacao, muda aqui.
+export const CIDADES = [
+  "Salgueiro",
+  "Petrolina",
+  "Serra Talhada",
+  "Cabrobó",
+  "Ouricuri",
+  "Araripina",
+] as const;

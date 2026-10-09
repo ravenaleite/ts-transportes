@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { WHATSAPP } from "@/lib/dados";
+import { WHATSAPP, CIDADES } from "@/lib/dados";
 
 export default function Servicos() {
   return (
@@ -83,8 +83,8 @@ export default function Servicos() {
             <div className="item">
               <h3>Raio de 250 km</h3>
               <p>
-                Salgueiro e as cidades do sertão de Pernambuco dentro desse
-                alcance.
+                Atendemos {CIDADES.join(", ")} e as demais cidades do
+                sertão de Pernambuco dentro desse alcance.
               </p>
             </div>
             <div className="item">

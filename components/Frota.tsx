@@ -11,7 +11,7 @@ export default function Frota() {
       <div className="interno">
         <h2>A frota</h2>
         <p className="apoio">
-          Seis veículos próprios e identificados. Carro executivo para o
+          Veículos próprios e identificados. Carro executivo para o
           artista, van para a banda e os equipamentos, picape e utilitário
           para as encomendas.
         </p>
@@ -43,7 +43,7 @@ export default function Frota() {
           <div className="item">
             <h3>Picape e utilitário</h3>
             <p>
-              Coleta e entrega de encomendas nas cidades do raio de 250 km.
+              Coleta e entrega de encomendas nas cidades da região.
             </p>
           </div>
         </div>

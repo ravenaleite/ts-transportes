@@ -2,7 +2,11 @@ import Arco from "./Arco";
 import { WHATSAPP } from "@/lib/dados";
 
 // Tres fatos que resumem o negocio antes da pessoa rolar a pagina.
-const etiquetas = ["Todo o Brasil", "Raio de 250 km", "6 veículos próprios"];
+const etiquetas = [
+  "Todo o Brasil",
+  "Depósito próprio em Salgueiro",
+  "Direto com quem dirige",
+];
 
 export default function Topo() {
   return (

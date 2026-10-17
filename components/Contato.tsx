@@ -34,8 +34,8 @@ export default function Contato() {
           <div>
             <div className="rotulo">Atendemos</div>
             <p className="apoio" style={{ marginTop: 0 }}>
-              Bandas em todo o Brasil. Encomendas em Salgueiro e num raio de
-              250 km.
+              Bandas e artistas em todo o Brasil. Coleta e envio a partir de
+              Salgueiro-PE.
             </p>
           </div>
         </div>

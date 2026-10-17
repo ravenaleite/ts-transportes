@@ -75,17 +75,17 @@ export default function Servicos() {
             sizes="(max-width: 760px) 100vw, 900px"
           />
           <p className="apoio">
-            Depósito próprio em {BASE}, atendendo um raio de 250 km. A carga
-            da região se junta no depósito e sai separada por rota: o veículo
+            Depósito próprio em {BASE}. A carga da região se junta no
+            depósito e sai separada por rota: o veículo
             que segue por uma BR entrega em todas as cidades daquele trecho.
           </p>
 
           <div className="dupla">
             <div className="item">
-              <h3>Raio de 250 km</h3>
+              <h3>Cidades da região</h3>
               <p>
                 Coleta e entrega em {CIDADES.join(", ")} e nas demais
-                cidades do sertão dentro desse alcance.
+                cidades do sertão atendidas pelas rotas.
               </p>
             </div>
             <div className="item">

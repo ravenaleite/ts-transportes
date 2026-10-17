@@ -1,12 +1,10 @@
 import Arco from "./Arco";
 import { WHATSAPP } from "@/lib/dados";
 
-// Tres fatos que resumem o negocio antes da pessoa rolar a pagina.
-const etiquetas = [
-  "Todo o Brasil",
-  "Depósito próprio em Salgueiro",
-  "Direto com quem dirige",
-];
+// Os fatos que resumem o negocio antes da pessoa rolar a pagina.
+// Dois, porque e o que o dono quis dizer. Encher a faixa com uma
+// terceira frase inventada seria pior que ter duas.
+const etiquetas = ["Todo o Brasil", "Depósito próprio em Salgueiro"];
 
 export default function Topo() {
   return (

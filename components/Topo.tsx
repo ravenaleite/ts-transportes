@@ -17,7 +17,7 @@ export default function Topo() {
         <p>
           Transporte de bandas, artistas e equipes de show para todo o Brasil,
           e coleta e entrega de encomendas em Salgueiro-PE e região.
-          Atendimento direto com quem dirige, sem intermediário.
+          Atendimento direto com a TS Transportes.
         </p>
 
         <ul className="etiquetas">

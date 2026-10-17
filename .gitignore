@@ -42,3 +42,8 @@ next-env.d.ts
 
 # HTML gerado pela exportacao estatica
 out/
+
+# Relatorios brutos do Lighthouse: a evidencia visual fica no PNG
+lighthouse-antes.html
+lighthouse-depois.html
+lighthouse-antes-depois.pdf

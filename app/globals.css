@@ -164,7 +164,10 @@ p { margin: 0; max-width: 62ch; }
   color: var(--fumaca);
 }
 
-/* Etiquetas: tres fatos do negocio, logo abaixo da chamada. */
+/* Etiquetas: os fatos do negocio, logo abaixo da chamada.
+   A faixa tem a largura do paragrafo acima (62ch na fonte dele, uns
+   40rem) e as etiquetas dividem esse espaco por igual. Assim a linha
+   fecha alinhada com o texto, sem sobrar vazio quando sao duas. */
 .etiquetas {
   display: flex;
   flex-wrap: wrap;
@@ -172,9 +175,12 @@ p { margin: 0; max-width: 62ch; }
   margin: 28px 0 0;
   padding: 0;
   list-style: none;
+  max-width: 40rem;
 }
 
 .etiquetas li {
+  flex: 1 1 12rem;
+  text-align: center;
   padding: 7px 16px;
   border: 1px solid var(--linha-clara);
   border-radius: 999px;
